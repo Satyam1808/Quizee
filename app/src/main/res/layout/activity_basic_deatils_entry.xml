@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi there! Ready to tell us your cool name?"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/purple"
+                android:id="@+id/name_heading"/>
+
+
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="First Name"
+                android:maxLength="10"
+                android:paddingLeft="20dp"
+                android:background="@drawable/otp_num_editbox"
+                android:textSize="16sp"
+                android:layout_below="@+id/name_heading"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                />
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Last Name"
+                android:maxLength="10"
+                android:paddingLeft="20dp"
+                android:background="@drawable/otp_num_editbox"
+                android:textSize="16sp"
+                android:layout_below="@+id/first_name"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/next_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/next_btn_design"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/baseline_arrow_forward_24" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "568433591404",
+    "project_id": "quizeapp-3d34a",
+    "storage_bucket": "quizeapp-3d34a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568433591404:android:0a63da4e95e1cda3b50449",
+        "android_client_info": {
+          "package_name": "com.example.cyberquize"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsBbX4WIPKoCtrtUCi07VEon2yetkcRp4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/cyberNewsViewAllLy"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:src="@color/purple"
+        android:scaleType="fitXY"
+        app:shapeAppearance="@style/RoundedSquareSec"
+        android:id="@+id/cyberNewsViewAllImg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="News Heading"
+        android:textSize="14sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/lightBlack"
+        android:layout_marginTop="5dp"
+        android:id="@+id/cyberNewsViewALlTxtHeading"
+        android:fontFamily="@font/poppins_medium"/>
+
+</LinearLayout>

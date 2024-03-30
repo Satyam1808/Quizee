@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragments.HomeFragment">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="20dp"
+               android:id="@+id/home_app_bar"
+               android:layout_marginRight="20dp">
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:layout_width="60dp"
+                   android:layout_height="60dp"
+                   android:src="@drawable/user_p_icn"
+                   android:id="@+id/user_profile_pic"/>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_toRightOf="@+id/user_profile_pic"
+                   android:layout_marginLeft="10dp"
+                   android:layout_centerVertical="true">
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Hello"
+                           android:textSize="14sp"
+                           android:textColor="@color/black"
+                           android:id="@+id/morning_wish_txt"
+                           android:fontFamily="@font/poppins_medium"
+                           />
+                       <ImageView
+                           android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:src="@drawable/hii_icn"
+                           android:layout_marginLeft="8sp"/>
+                   </LinearLayout>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="16sp"
+                       android:textColor="@color/lightBlack"
+                       android:id="@+id/user_name"
+                       android:fontFamily="@font/poppins_medium"
+                       />
+
+               </LinearLayout>
+
+           </RelativeLayout>
+
+
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Quiz of the Week"
+                   android:textStyle="bold"
+                   android:textColor="@color/lightBlack"
+                   android:textSize="18sp"
+                   android:id="@+id/quizOWText"
+                   android:fontFamily="@font/poppins_medium"
+                   />
+
+           </RelativeLayout>
+
+           <com.google.android.material.imageview.ShapeableImageView
+               android:layout_width="match_parent"
+               android:layout_height="220dp"
+               android:id="@+id/quize_of_week_img"
+               android:src="@drawable/image_svg_com"
+               android:layout_marginTop="20dp"
+               android:scaleType="fitXY"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               app:shapeAppearance="@style/RoundedSquareSec"/>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Discover"
+                   android:textStyle="bold"
+                   android:textColor="@color/lightBlack"
+                   android:textSize="18sp"
+                   android:layout_centerVertical="true"
+                   android:fontFamily="@font/poppins_medium"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="View all"
+                   android:layout_centerVertical="true"
+                   android:textColor="@color/purple"
+                   android:layout_alignParentRight="true"
+                   android:textSize="14sp"
+                   android:id="@+id/discover_viewTxt"
+                   android:fontFamily="@font/poppins_medium"
+                   />
+           </RelativeLayout>
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/discoverRv"
+               android:layout_marginTop="10dp"
+               />
+
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:background="@color/moreLightPurple">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Cyber News"
+                   android:textStyle="bold"
+                   android:textSize="20sp"
+                   android:fontFamily="@font/poppins_medium"
+                   android:textColor="@color/purple"
+                   android:layout_centerHorizontal="true"
+                   android:id="@+id/vnTxt"
+                   android:layout_marginTop="20dp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Explore All Latest Cyber Security News"
+                   android:textSize="14sp"
+                   android:textColor="@color/purple"
+                   android:layout_centerHorizontal="true"
+                   android:layout_below="@+id/vnTxt"
+                   android:id="@+id/vnDescTxt"
+                   />
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:id="@+id/cyberNewsRv"
+                   android:layout_below="@+id/vnDescTxt"
+                   android:layout_marginBottom="20dp"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="View all"
+                   android:textColor="@color/purple"
+                   android:textSize="18sp"
+                   android:fontFamily="@font/poppins_medium"
+                   android:id="@+id/cyberNewsViewTxt"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginBottom="20dp"
+                   android:layout_below="@+id/cyberNewsRv"/>
+
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Visit Cert-In Official Website"
+                   android:textStyle="bold"
+                   android:textColor="@color/lightBlack"
+                   android:textSize="18sp"
+                   android:layout_centerVertical="true"
+                   android:fontFamily="@font/poppins_medium"
+                   />
+
+
+           </RelativeLayout>
+
+
+           <com.google.android.material.imageview.ShapeableImageView
+               android:layout_width="match_parent"
+               android:layout_height="220dp"
+               android:src="@drawable/goto_certin_img"
+               app:shapeAppearance="@style/RoundedSquareSec"
+               android:layout_marginTop="20dp"
+               android:layout_marginRight="10dp"
+               android:scaleType="fitXY"
+               android:layout_marginLeft="10dp"
+               android:layout_marginBottom="50dp"
+               android:id="@+id/goto_certin_website_Img"/>
+
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>

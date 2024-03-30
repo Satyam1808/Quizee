@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Quizee</string>
+    <string-array name="country_codes">
+        <item>+1</item> <!-- United States -->
+        <item>+91</item> <!-- India -->
+        <item>+44</item> <!-- United Kingdom -->
+        <item>+81</item> <!-- Japan -->
+        <item>+86</item> <!-- China -->
+        <item>+49</item> <!-- Germany -->
+        <item>+33</item> <!-- France -->
+        <item>+7</item>  <!-- Russia -->
+        <item>+55</item> <!-- Brazil -->
+        <item>+39</item> <!-- Italy -->
+    </string-array>
+
+    <string name="otpAuthenticationTxt">We will send you conformation code</string>
+    <string name="otpVerifyTxt">Enter 6 digit verification code sent to your phone number</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="aboutUsTxt">Welcome to Quizee, your go-to platform for enhancing cybersecurity awareness and knowledge. At [Your App Name], we are dedicated to providing users with valuable resources, quizzes, and news to empower them to navigate the digital world safely and securely.</string>
+    <string name="ourMissionTxt">Our mission is to educate individuals about cybersecurity risks, best practices, and emerging threats to promote a safer online experience for everyone. Through engaging quizzes, informative articles, and curated news, we aim to equip users with the knowledge and skills needed to protect themselves and their digital assets from cyber threats.</string>
+    <string name="aboutUsFeatures">Quiz Section: Test your knowledge with our interactive quizzes covering a wide range of cybersecurity topics, including data privacy, online safety, phishing, malware, and more.
+
+E-Certificate: Earn e-certificates upon completing quizzes to recognize your dedication to cybersecurity education and awareness.
+
+Tips and Safety Advice: Access valuable tips, best practices, and safety advice to enhance your cybersecurity hygiene and protect yourself from online threats.
+
+Cyber News: Stay informed about the latest cybersecurity trends, data breaches, security updates, and industry developments through our curated news section.</string>
+
+    <string name="aboutUsGetInvolve">Join our community of cybersecurity enthusiasts and learners to stay updated, share insights, and contribute to creating a safer online environment. Together, we can make a difference in combating cyber threats and building a more secure digital future.</string>
+
+    <string name="quizOfWeekDescription">
+
+Welcome to today Cyber Security Quiz! Test your knowledge of essential cyber security concepts and best practices with these 10 questions. Whether you are a seasoned professional or just starting in the field, this quiz offers a great opportunity to refresh your understanding of cyber security fundamentals. Lets dive in and see how well you fare against these questions! \n\n
+
+Best of luck!</string>
+
+    <string name="quizOfWeekTermAndCond">1.Participants must answer all questions independently without assistance.\n2.The quiz duration is limited to 10 minutes.Late submissions will not be accepted.\n3.Only one attempt is allowed per participant.\n4.The certification of participation will be provided upon completion of the quiz.\n5.By participating in the quiz, you agree to abide by the rules and conditions stated above.</string>
+</resources>

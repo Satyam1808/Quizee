@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Activities.OtpAuthenticationActivity">
+
+
+<com.google.android.material.imageview.ShapeableImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/quizee_icn"
+ app:shapeAppearance="@style/RoundedSquare"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="120dp"
+    android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Create account or login"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your phone number"
+        android:textColor="@color/lightBlack"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/otp_num_editbox"
+            >
+
+            <Spinner
+                android:id="@+id/spinnerCountryCode"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:entries="@array/country_codes" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edt_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/view"
+            android:hint="Enter Your Number"
+            android:maxLength="10"
+            android:paddingLeft="20dp"
+            android:background="@drawable/otp_num_editbox"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:layout_marginLeft="8dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/otpAuthenticationTxt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/grey"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Send OTP"
+            android:textSize="18sp"
+            android:id="@+id/sendOtpBtn"
+            android:backgroundTint="@color/purple"
+
+            />
+
+        <ProgressBar
+            android:id="@+id/otpNumerProgressbar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:progressTint="@color/purple"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
